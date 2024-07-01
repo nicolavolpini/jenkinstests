@@ -8,5 +8,10 @@ pipeline {
                 sayHello()
             }
         }
+                stage('Creds') {
+            steps {
+                getCred()
+            }
+        }
     }
 }
